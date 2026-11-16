@@ -1,0 +1,8 @@
+{
+  "name": "Grape Wayne | Official Site",
+  "description": "Official artist website for Grape Wayne featuring music, videos, and updates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

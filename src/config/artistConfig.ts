@@ -7,7 +7,7 @@ export const defaultArtistConfig: ArtistConfig = {
   artistName: "Grape Wayne",
 
   // ============================================================
-  // HERO ASSETS (Camera roll video will be uploaded later)
+  // HERO ASSETS
   // ============================================================
   heroVideoUrl: "/hero-video.mp4",
   heroImage: "/hero-poster.jpg",
@@ -38,6 +38,13 @@ export const defaultArtistConfig: ArtistConfig = {
       isStreaming: true
     },
     {
+      id: "bandcamp",
+      platform: "bandcamp",
+      url: "https://grapewayne.bandcamp.com",
+      label: "Bandcamp",
+      isStreaming: true
+    },
+    {
       id: "youtube",
       platform: "youtube",
       url: "https://www.youtube.com/@GrapeWayneMusic",
@@ -60,6 +67,21 @@ export const defaultArtistConfig: ArtistConfig = {
       title: "MUSIC",
       releases: [
         {
+          id: "holy-pictures",
+          title: "Holy Pictures",
+          type: "single",
+          releaseDate: "Upcoming Single",
+          coverArt: "/covers/holy-pictures.jpg",
+          preSaveUrl: "https://lnk.to/holypictures",
+          songlinkUrl: "https://lnk.to/holypictures",
+          spotifyUrl: "https://lnk.to/holypictures",
+          appleMusicUrl: "https://lnk.to/holypictures",
+          bandcampUrl: "https://grapewayne.bandcamp.com",
+          deezerUrl: "https://lnk.to/holypictures",
+          tidalUrl: "https://lnk.to/holypictures",
+          amazonMusicUrl: "https://lnk.to/holypictures"
+        },
+        {
           id: "henry-lee-feat-grape-wayne",
           title: "Henry Lee (feat. Grape Wayne)",
           type: "single",
@@ -75,6 +97,7 @@ export const defaultArtistConfig: ArtistConfig = {
           appleMusicUrl: "https://music.apple.com/us/album/henry-lee-feat-grape-wayne-single/6828137984",
           itunesUrl: "https://itunes.apple.com/us/album/henry-lee-feat-grape-wayne-single/6828137984",
           spotifyUrl: "https://open.spotify.com/album/1txjQaIuVssSANOaUL98k6",
+          bandcampUrl: "https://grapewayne.bandcamp.com",
           youtubeMusicUrl: "https://music.youtube.com/search?q=Grape%20Wayne%20Henry%20Lee",
           amazonMusicUrl: "https://music.amazon.com/search/Grape%20Wayne%20Henry%20Lee",
           deezerUrl: "https://www.deezer.com/search/Grape%20Wayne%20Henry%20Lee",
@@ -96,6 +119,7 @@ export const defaultArtistConfig: ArtistConfig = {
           appleMusicUrl: "https://music.apple.com/us/album/mattress-factory-feat-syl-dubenion-single/6767780600",
           itunesUrl: "https://itunes.apple.com/us/album/mattress-factory-feat-syl-dubenion-single/6767780600",
           spotifyUrl: "https://open.spotify.com/artist/3QFqQk8KxsAiFAYZVla3t1",
+          bandcampUrl: "https://grapewayne.bandcamp.com",
           youtubeUrl: "https://www.youtube.com/watch?v=NYYGYSzzw6A",
           youtubeMusicUrl: "https://music.youtube.com/search?q=Grape%20Wayne%20Mattress%20Factory",
           amazonMusicUrl: "https://music.amazon.com/search/Grape%20Wayne%20Mattress%20Factory",
@@ -118,6 +142,7 @@ export const defaultArtistConfig: ArtistConfig = {
           appleMusicUrl: "https://music.apple.com/us/album/teeth-single/1884302364",
           itunesUrl: "https://itunes.apple.com/us/album/teeth-single/1884302364",
           spotifyUrl: "https://open.spotify.com/album/2iuz8Fc8nDEV3PHod8XO91",
+          bandcampUrl: "https://grapewayne.bandcamp.com",
           youtubeUrl: "https://www.youtube.com/watch?v=qQr1mQw-oyQ",
           youtubeMusicUrl: "https://music.youtube.com/search?q=Grape%20Wayne%20Teeth",
           amazonMusicUrl: "https://music.amazon.com/search/Grape%20Wayne%20Teeth",
@@ -140,6 +165,7 @@ export const defaultArtistConfig: ArtistConfig = {
           appleMusicUrl: "https://music.apple.com/us/album/many-things-are-destroying-me-single/1853440778",
           itunesUrl: "https://itunes.apple.com/us/album/many-things-are-destroying-me-single/1853440778",
           spotifyUrl: "https://open.spotify.com/artist/3QFqQk8KxsAiFAYZVla3t1",
+          bandcampUrl: "https://grapewayne.bandcamp.com",
           youtubeUrl: "https://www.youtube.com/watch?v=phKvJ1CcTS0",
           youtubeMusicUrl: "https://music.youtube.com/search?q=Grape%20Wayne%20Many%20Things%20Are%20Destroying%20Me",
           amazonMusicUrl: "https://music.amazon.com/search/Grape%20Wayne%20Many%20Things%20Are%20Destroying%20Me",
@@ -171,13 +197,26 @@ export const defaultArtistConfig: ArtistConfig = {
     live: {
       enabled: true,
       title: "LIVE",
-      status: "coming_soon"
+      status: "active",
+      events: [
+        {
+          id: "cassette-nyc-2026-12-04",
+          date: "Friday, Dec 4, 2026",
+          venue: "Cassette",
+          city: "New York, NY",
+          lineup: "Simon Hanes, Grape Wayne, Whenwolves",
+          doors: "7:30 PM",
+          ticketUrl: "https://dice.fm/partner/tickets/event/dlggp6-simon-hanes-grape-wayne-whenwolves-4th-dec-cassette-new-york-city-tickets?dice_id=10913488&dice_channel=web&dice_tags=organic&dice_campaign=Chicken+Soup+%26+Rice+LLC+dba+Cassette+NYC&dice_feature=mio_marketing",
+          status: "tickets"
+        }
+      ]
     },
 
     shop: {
       enabled: true,
       title: "STORE",
-      status: "coming_soon"
+      status: "active",
+      url: "https://grapewayne.bandcamp.com"
     },
 
     contact: {

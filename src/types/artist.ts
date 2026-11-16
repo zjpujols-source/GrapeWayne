@@ -49,6 +49,18 @@ export interface Release {
   iheartUrl?: string;
   itunesUrl?: string;
   songlinkUrl?: string;
+  preSaveUrl?: string;
+}
+
+export interface LiveEvent {
+  id: string;
+  date: string;
+  venue: string;
+  city: string;
+  lineup?: string;
+  doors?: string;
+  ticketUrl: string;
+  status?: 'tickets' | 'sold_out' | 'free';
 }
 
 export interface VideoItem {
@@ -86,6 +98,7 @@ export interface ArtistConfig {
       enabled: boolean;
       title: string;
       status?: 'active' | 'coming_soon';
+      events?: LiveEvent[];
     };
 
     shop: {

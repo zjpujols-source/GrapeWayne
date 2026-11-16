@@ -48,6 +48,17 @@ export const StreamModal: React.FC<StreamModalProps> = ({
 
   const platforms: PlatformOption[] = [];
 
+  if (release.preSaveUrl) {
+    platforms.push({
+      name: 'Pre-Save Track',
+      url: release.preSaveUrl,
+      iconBg: 'bg-white text-black',
+      textColor: 'text-white',
+      badge: 'Pre-Save Now',
+      icon: <ExternalLink className="w-5 h-5 text-black" />,
+    });
+  }
+
   if (release.spotifyUrl) {
     platforms.push({
       name: 'Spotify',

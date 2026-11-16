@@ -91,7 +91,7 @@ export const MusicTab: React.FC<MusicTabProps> = ({
               )}
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <span className="text-xs uppercase tracking-[0.25em] font-bold bg-white text-black px-6 py-3 shadow-2xl">
-                  Stream Track
+                  {activeItem.preSaveUrl ? 'Pre-Save Track' : 'Stream Track'}
                 </span>
               </div>
             </div>
@@ -117,7 +117,7 @@ export const MusicTab: React.FC<MusicTabProps> = ({
                   onClick={handleOpenStreamModal}
                   className="group inline-flex items-center gap-3 text-sm sm:text-base font-bold uppercase tracking-[0.2em] text-white hover:text-zinc-300 transition-colors"
                 >
-                  <span>Stream / Download</span>
+                  <span>{activeItem.preSaveUrl ? 'Pre-Save / Stream' : 'Stream / Download'}</span>
                   <span className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center transition-transform group-hover:translate-x-1 shadow-lg shrink-0">
                     <ArrowRight className="w-4 h-4" />
                   </span>

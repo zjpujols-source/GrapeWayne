@@ -155,21 +155,15 @@ export const defaultArtistConfig: ArtistConfig = {
       items: [
         {
           id: "video-1",
-          title: "Grape Wayne - Mattress Factory (Official Video)",
+          title: "Mattress Factory (Official Video)",
           youtubeId: "NYYGYSzzw6A",
           thumbnail: "https://img.youtube.com/vi/NYYGYSzzw6A/maxresdefault.jpg"
         },
         {
           id: "video-2",
-          title: "Grape Wayne - Many Things are Destroying Me (Official Video)",
+          title: "Many Things are Destroying Me (Official Video)",
           youtubeId: "phKvJ1CcTS0",
           thumbnail: "https://img.youtube.com/vi/phKvJ1CcTS0/maxresdefault.jpg"
-        },
-        {
-          id: "video-3",
-          title: "Grape Wayne - Teeth",
-          youtubeId: "qQr1mQw-oyQ",
-          thumbnail: "https://img.youtube.com/vi/qQr1mQw-oyQ/hqdefault.jpg"
         }
       ]
     },

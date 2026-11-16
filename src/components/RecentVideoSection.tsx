@@ -62,8 +62,9 @@ export const RecentVideoSection: React.FC<RecentVideoSectionProps> = ({ config }
               {isPlaying ? (
                 <div className="relative w-full h-full">
                   <iframe
-                    src={`https://www.youtube-nocookie.com/embed/${activeVideo.youtubeId}?autoplay=1&rel=0`}
+                    src={`https://www.youtube.com/embed/${activeVideo.youtubeId}?autoplay=1&rel=0&playsinline=1`}
                     title={activeVideo.title}
+                    referrerPolicy="strict-origin-when-cross-origin"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                     className="w-full h-full border-0"
@@ -137,7 +138,7 @@ export const RecentVideoSection: React.FC<RecentVideoSectionProps> = ({ config }
                         </div>
                       </div>
                       <div className="p-2 sm:p-2.5 flex items-center justify-between flex-1 bg-zinc-950">
-                        <h4 className="text-[11px] sm:text-xs font-bold uppercase text-white truncate group-hover:text-purple-300 transition-colors leading-snug">
+                        <h4 className="text-[11px] sm:text-xs font-bold uppercase text-white truncate group-hover:text-zinc-300 transition-colors leading-snug">
                           {video.title}
                         </h4>
                       </div>
